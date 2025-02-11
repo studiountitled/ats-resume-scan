@@ -1,11 +1,11 @@
-import * as pdfjsLib from "pdfjs-dist";
-import pdfWorker from "pdfjs-dist/build/pdf.worker.mjs"; // Import the worker explicitly
+// import * as pdfjsLib from "pdfjs-dist";
+// import pdfWorker from "pdfjs-dist/build/pdf.worker.mjs"; // Import the worker explicitly
 import { MyErrorResponse } from "../type";
 
 // Set the worker path manually
-pdfjsLib.GlobalWorkerOptions.workerSrc = URL.createObjectURL(
-  new Blob([pdfWorker], { type: "application/javascript" })
-);
+// pdfjsLib.GlobalWorkerOptions.workerSrc = URL.createObjectURL(
+//   new Blob([pdfWorker], { type: "application/javascript" })
+// );
 
 // export const getTextFromPDF = async (file: File): Promise<string | null> => {
 //   try {

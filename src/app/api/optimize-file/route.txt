@@ -1,0 +1,233 @@
+// import { NextResponse } from "next/server";
+// import { openai } from "../optimize-text/route";
+// // import { getTextFromPDF } from "../../utils/util";
+
+// export const POST = async (req: Request) => {
+//   try {
+//     const jobDescription = `
+
+//     IT Applications Support Specialist
+
+// The District of Squamish is located in the unceded traditional territory of the Skwxwú7mesh Úxwumixw (Squamish Nation). We offer gratitude to the Skwxwú7mesh People who have lived on these lands since time immemorial.
+
+// External Job Posting
+// Position: IT Applications Support Specialist
+// Status: Regular Full-Time
+// Work Area: Information Technology
+// Posting Date: February 4, 2025
+// Closing Date: February 11, 2025
+
+// GENERAL SUMMARY
+// Under the direction of the Manager of IT Business Applications, the Applications Support Specialist supports various users of business applications through the resolution of applications support tickets, while leading the coordination of, and conducting, various forms of training. This position plays an equally critical role in the maintenance and operation of applications used daily across the organization. This position helps ensure all applications are functioning correctly and supports the Business Applications teams’ objectives of increasing adoption, ultimate utilization and growth of new and existing applications to meet business and user needs.
+
+// KEY RESPONSIBILITIES
+// IT Applications Support Specialist Duties and Responsibilities:
+// Contributes to the success of our team and creation of our thriving community, by fostering the District of Squamish corporate values: Respect, Integrity, Connection and Progress.
+// Responds promptly to user inquiries, diagnoses and resolves applications related support issues.
+// Provides advice, training and materials to users in response to identified difficulties.
+// Supports training requirements associated with new implementations and ongoing product growth and refinement work.
+// Maintains and develops training documentation and supports the Learning & Development strategy.
+// Supports release of new features, bug fixes, technology upgrades, as well launches of new SharePoint sites, functionality or application modules.
+// Consults user guides, technical manuals and other documents to research and implement solutions.
+// Monitors the use of systems on a frequent basis, discusses observations with the business applications team and participates in the redesign of applications and other software where needed.
+// Supports enquiries, issues, updates, and tickets regarding the Microsoft 365 suite of products.
+// Sets up, and assists with, maintaining various user applications accounts.
+// Documents processes, troubleshooting results, application changes, content and helps maintain technical documentation.
+// Works closely with other IT teams, particularly the Technical Support Specialists, to support users and resolve issues.
+// Performs other duties as assigned.
+
+// REQUIRED KNOWLEDGE, SKILLS & ABILITIES
+// Thorough knowledge of the methods, principles, best practices, in change management and effective training.
+// Knowledge of support software, ITIL and Microsoft support tools such as Intune.
+// Knowledge and experience with the M365 suite, and how to support and leverage it for training purposes.
+// Knowledge of learning management systems.
+// Excellent interpersonal and communications skills with the ability to deal with people in a professional and empathetic manner.
+// Ability to evaluate and identify problems, needs or gaps and provide recommendations with supporting help content.
+// Ability to establish priorities, plan projects, and schedule resources and work assignments of self, consultants, and others.
+// Understands the fundamentals of applications, their implementation and management through the growth cycle.
+
+// REQUIRED TRAINING, EDUCATION AND EXPERIENCE
+// Grade 12 or equivalent
+// 3 years’ directly related industry experience
+// AND
+// Completion of a two-year accredited technical diploma program in computer sciences or a related field (Microsoft 365 certification is an asset)
+// OR
+// Bachelor’s degree in a directly related field from a recognized institution, plus 2 years directly related experience
+// OR
+// An equivalent combination of education, training and experience
+
+// The above statements are intended to describe the general nature and level of work being performed by people assigned to this position.  This is a general list of responsibilities, duties and skills required of personnel so classified.  Other related duties may be assigned in keeping with the general nature of the position.
+
+// Hours of Work:
+// 70 hours biweekly. Current shifts (subject to change) are between the hours of 8:00am to 5:00pm, Monday to Friday (fortnight schedule).
+
+// Salary:
+//  $39.73 per hour
+
+// **Please note: While this position is Regular Full-Time, it is currently funded through Capital Projects for approximately four years.
+
+// This is a Union position within the Collective Agreement of CUPE Local 2269 and the District of Squamish.
+
+// Click here to apply.
+
+// If you encounter any issues with the form, please submit your resume and qualifications by email to jobs@squamish.ca (Quoting Competition #) To: #25-08 or submit your paper application to:
+
+// Human Resources
+// District of Squamish
+// 37955 Second Avenue, P.O. Box 310,
+// Squamish, B.C., V8B 0A3
+
+// As an equitable and inclusive employer, we value diversity of people to best represent the community we serve and provide excellent services to our citizens. We strive to attract and retain passionate and talented individuals of all backgrounds, demographics, and life experiences. If you require any adjustments to enable participation at any stage of the recruitment process, please contact in confidence jobs@squamish.ca and include Accessibility in the subject line. We thank all applicants for applying.
+
+//     `;
+
+//     const formData = await req.formData();
+
+//     const file = formData.get("resume") as File;
+
+//     let resume = "";
+
+//     if (!file)
+//       return NextResponse.json(
+//         { message: "Bad Request, No file Attached" },
+//         { status: 404 }
+//       );
+
+//     if (file.type === "application/pdf") {
+//       const extractedText = await getTextFromPDF(file);
+//       if (!extractedText)
+//         return NextResponse.json({ message: "" }, { status: 500 });
+//       resume = extractedText;
+//     }
+
+//     const prompt = `
+// **Role**: Act as a professional Career Coach specializing in ATS optimization and competitive job markets.
+
+// **Input Context**:
+// - **Resume**: ${resume}
+// - **Job Description**: ${jobDescription}
+
+// **Objective**:
+// Rewrite and enhance the submitted resume to improve **clarity, impact, and ATS compatibility** while maintaining accuracy and relevance to the job.
+
+// ---
+
+// ### **1️⃣ Requirement Analysis**
+// Extract key job requirements:
+// - **Core Requirements (5-7 most important)**
+// - **Deal-breakers (e.g., 'Must have CPA certification')**
+// - **Ignore Driver's License Requirements** Do use Driver's license requirements to Score the Resume
+
+// ### **2️⃣ Resume Audit & Extraction**
+// Identify key components from the resume:
+// - **Technical Skills** (languages, frameworks, tools)
+// - **Achievements** (metrics, quantifiable results)
+// - **Experience Match** (years of experience vs JD requirements)
+// - **Education & Certifications**
+
+// ### **3️⃣ Gap Analysis (Resume vs. Job Description)**
+// - **Matches**: Exact skills/experience alignment
+// - **Partial Matches**: Related but not exact skills
+// - **Missing Elements**: Important but absent requirements
+// - **Transferable Skills**: Non-matching but relevant experience
+
+// ### **4️⃣ Strategic SWOT Analysis**
+// - **Strengths**: Direct qualification matches
+// - **Weaknesses**: Missing hard requirements
+// - **Opportunities**: Transferable skills that could be leveraged
+// - **Threats**: Potential deal-breakers (e.g., location constraints)
+
+// ### **5️⃣ Resume Scoring (0-100%)**
+// - **Base Score** calculated on requirement matches
+// - **Bonus Points** for additional qualifications
+// - **Penalty** for missing deal-breakers
+// - **Transferable Skill Weighting** to adjust for indirect experience
+
+// ### **6️⃣ Resume Enhancement**
+// Rewrite the submitted resume to make it **stronger, more compelling, and better aligned** with the job description:
+// - **Professional Summary** (Refine and integrate key JD terms naturally)
+// - **Skills Section** (Optimize with ATS-friendly keywords)
+// - **Experience Section** (Enhance descriptions to better match the JD and improve impact. Use quantifiable achievements and relevant complex technologies where necessary.)
+
+// Each **responsibility** under the rewritten_resume work experience section **MUST** be:
+// - at least **150 characters**
+// - Structured with **title, location, company, time worked, and responsibilities**
+
+// ---
+// Do not include any text or commentary.
+// Do not add \`\`\`json to the start or end of your reply.
+
+// ### **💾 Output Format (JSON Response)**
+
+// {
+//   "analysis": {
+//     "job_requirements": {"core": [], "deal_breakers": []},
+//     "resume_components": {"skills": [], "achievements": [], "experience": []},
+//     "gap_matrix": {
+//       "matches": [],
+//       "partial_matches": [],
+//       "missing": [],
+//       "transferable_skills": []
+//     }
+//   },
+//   "swot": {
+//     "strengths": [],
+//     "weaknesses": [],
+//     "opportunities": [],
+//     "threats": []
+//   },
+//   "scoring": {
+//     "base_score": 0,
+//     "breakdown": {"experience": 0, "skills": 0, "education": 0},
+//     "disqualifiers": []
+//   },
+//   "optimization": {
+//     "before_after_samples": [],
+//     "change_log": []
+//   },
+//   "rewritten_resume": {
+//     "professional_summary": "",
+//     "skills": [],
+//     "experience": [
+//       {
+//         "title": "",
+//         "company": "",
+//         "location": "",
+//         "time_worked": "",
+//         "responsibilities": [(Each responsibility **MUST** be at least 150 characters)]
+//       }
+//     ],
+//     "education": [
+//       {
+//         "degree": "",
+//         "field_of_study": "",
+//         "institution": "",
+//         "location": "",
+//         "time_attended": ""
+//       }
+//     ]
+//   }
+// }
+// `;
+
+//     const response = await openai.chat.completions.create({
+//       model: "gpt-4o",
+//       messages: [{ role: "user", content: prompt }],
+//       temperature: 0.3,
+//     });
+
+//     const analysis = response.choices[0].message?.content;
+
+//     if (!analysis)
+//       return NextResponse.json(
+//         { message: "Something went wrong while getting OpenAI's response" },
+//         { status: 500 }
+//       );
+
+//     return NextResponse.json(JSON.parse(analysis));
+//   } catch (error) {
+//     if (error instanceof Error) {
+//       return NextResponse.json({ messge: error.message }, { status: 500 });
+//     }
+//   }
+// };

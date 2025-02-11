@@ -1,0 +1,32 @@
+Praise Omogbemeh
+Phone: 9055197439 | onosithena@gmail.com | GitHub
+
+  Education
+• Post Grad. Diploma in Web Development, University of Winnipeg, Canada.                              Aug 2022 – Sep 2023
+• Post Grad. Diploma in Cybersecurity, (Graduated with Honors) Mohawk College, Canada.   Jan 2022 – Aug 2022
+• Bachelor of Engineering, Covenant University, Nigeria.               ​                                                           Aug 2014 – Jul 2019
+
+Work Experience​
+IT Support Specialist | Broadstreet Properties | British Columbia, Canada                                     Jan 2024 – Present
+• Automated provisioning and de-provisioning for user onboarding and offboarding by creating PowerShell scripts that integrate with On-Prem and Azure AD, minimizing manual efforts by 60% and enhancing accuracy.
+• Administered identity and group configurations in Active Directory and Office 355, supporting a user base of over 900 and optimizing access control to O365 groups, mailboxes, and SharePoint sites.
+• Contributed to 20+ cyber-security investigations monthly by auditing sign-in logs, monitoring impossible travel activity, reviewing phishing emails using tools like SentinelOne and Defender, preventing 90% of incidents.
+• Monitored network infrastructure across 100+ locations consisting of Unifi Edge routers, TP Link switches, and Wireguard VPNs, ensuring 95% uptime and business continuity.
+ 
+Web Development Intern | Bit Space Development | Winnipeg, Canada                                               Jul 2023 – Sep 2023
+• Collaborated with a cross-functional team to meet HIPAA security requirements by implementing secure protection of data at rest, and multi-factor authentication using Okta OAuth, preventing fines of up to $250,000.
+• Developed a centralized design theme system using Typescript, React, HTML, and CSS resulting in a 60% reduction in development time and ensuring consistent branding and design across the application.
+• Created and maintained clear, developer-friendly API documentation using Swagger, improving integration efficiency by 20% and reducing support queries by 15%.
+• Optimized MS SQL databases, executing complex queries and basic SQL commands (SELECT, INSERT, UPDATE, DELETE) to enhance data retrieval efficiency and support application performance.
+​​
+IT Support Specialist | MR International | Nigeria. ​                                                                             Aug 2019 – Dec 2021
+• Proactively monitored system performance by doing monthly audits, identifying potential issues for prompt resolution, contributing to a 30% reduction in system downtime and a 20% improvement in overall reliability.
+• Developed and maintained comprehensive network documentation, which reduced onboarding time for new team members by 20% and improved overall team efficiency.
+• Created security training materials focused on phishing campaigns, improving employees' ability to identify and respond to threats, resulting in a 20% increase in threat detection and faster response times to attacks.
+• Wrote PowerShell scripts to automate routine tasks like auditing licenses and group access on Active Directory and O365, reducing manual effort by 25% and increasing team productivity by 20%.
+ 
+
+Skills
+• Technical Skills: OAuth, IAM, O365, Active Directory, TCP/IP, Linux, Unifi, Windows Server, MS SQL, PowerShell, Bash, Networking, Malware Analysis, Office 365, AWS (EC2, S3), Azure, Docker, Kubernetes, Terraform, and Java.
+• Soft Skills: Self-motivated, attention to detail, good time management skills, good interpersonal skills, excellent problem-solving and decision-making, Effective communication, and collaboration skills.
+Certification: (ISC)2 Certified in Cybersecurity – (Expected)

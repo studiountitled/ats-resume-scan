@@ -1,0 +1,180 @@
+{
+  "analysis": {
+    "job_requirements": {
+      "core": [
+        "IT support and troubleshooting",
+        "Software installation and configuration",
+        "Network administration and maintenance",
+        "Customer service skills",
+        "Project management and strategic planning"
+      ],
+      "deal_breakers": [
+        "RCMP Enhanced Security Clearance",
+        "Completion of a two-year accredited diploma program in computer science or related field"
+      ]
+    },
+    "resume_components": {
+      "skills": [
+        "OAuth",
+        "IAM",
+        "O365",
+        "Active Directory",
+        "TCP/IP",
+        "Linux",
+        "Unifi",
+        "Windows Server",
+        "MS SQL",
+        "PowerShell",
+        "Bash",
+        "Networking",
+        "Malware Analysis",
+        "AWS",
+        "Azure",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Java"
+      ],
+      "achievements": [
+        "Supported over 600 endpoints and 900 users",
+        "Achieved 98% network uptime",
+        "Reduced development time by 60%",
+        "Improved integration efficiency by 20%"
+      ],
+      "experience": [
+        "IT Support Specialist at Broadstreet Properties",
+        "Web Development Intern at Bit Space Development",
+        "IT Support Specialist at MR International"
+      ]
+    },
+    "gap_matrix": {
+      "matches": [
+        "IT support and troubleshooting",
+        "Software installation and configuration",
+        "Network administration and maintenance",
+        "Customer service skills"
+      ],
+      "partial_matches": ["Project management", "Training experience"],
+      "missing": [
+        "RCMP Enhanced Security Clearance",
+        "Specific experience in library technology"
+      ],
+      "transferable_skills": [
+        "Leadership",
+        "Collaboration with cross-functional teams",
+        "Development of training materials"
+      ]
+    }
+  },
+  "swot": {
+    "strengths": [
+      "Extensive IT support experience",
+      "Strong technical skills in network and system administration",
+      "Proven track record of reducing downtime and improving efficiency"
+    ],
+    "weaknesses": [
+      "Lack of specific library technology experience",
+      "No mention of RCMP Enhanced Security Clearance"
+    ],
+    "opportunities": [
+      "Leverage leadership and training skills",
+      "Highlight experience with project management"
+    ],
+    "threats": [
+      "Requirement for RCMP Enhanced Security Clearance",
+      "Specific library technology experience preferred"
+    ]
+  },
+  "scoring": {
+    "base_score": 75,
+    "breakdown": {
+      "experience": 30,
+      "skills": 30,
+      "education": 15
+    },
+    "disqualifiers": ["RCMP Enhanced Security Clearance"]
+  },
+  "optimization": {
+    "before_after_samples": [
+      {
+        "before": "Supported over 600 endpoints and 900 users",
+        "after": "Managed IT support for over 600 endpoints and 900 users, ensuring optimal performance and minimal downtime through proactive maintenance and troubleshooting."
+      }
+    ],
+    "change_log": [
+      "Enhanced clarity and impact of responsibilities",
+      "Integrated ATS-friendly keywords",
+      "Aligned experience with job description requirements"
+    ]
+  },
+  "rewritten_resume": {
+    "professional_summary": "Dynamic IT professional with extensive experience in network and system administration, adept at managing IT support for large user bases and optimizing performance. Proven track record in reducing downtime and improving efficiency through proactive maintenance and troubleshooting. Strong leadership and training skills, with a commitment to service excellence and continuous learning.",
+    "skills": [
+      "IT Support and Troubleshooting",
+      "Network Administration",
+      "Software Installation and Configuration",
+      "Customer Service",
+      "Project Management",
+      "Leadership and Training"
+    ],
+    "experience": [
+      {
+        "title": "IT Support Specialist",
+        "company": "Broadstreet Properties",
+        "location": "British Columbia, Canada",
+        "time_worked": "Jan 2024 – Present",
+        "responsibilities": [
+          "Managed IT support for over 600 endpoints and 900 users, ensuring optimal performance and minimal downtime through proactive maintenance and troubleshooting.",
+          "Administered Microsoft Active Directory and Office 365, optimizing access control and supporting a user base of over 900.",
+          "Monitored and configured network infrastructure across 100+ locations, achieving 98% uptime and ensuring business continuity.",
+          "Contributed to IT infrastructure planning for $6M+ projects, collaborating with cross-functional teams to align on goals and deliverables."
+        ]
+      },
+      {
+        "title": "Web Development Intern",
+        "company": "Bit Space Development",
+        "location": "Winnipeg, Canada",
+        "time_worked": "Jul 2023 – Sep 2023",
+        "responsibilities": [
+          "Collaborated with a cross-functional team to implement secure data protection and multi-factor authentication, preventing fines of up to $250,000.",
+          "Developed a centralized design theme system, reducing development time by 60% and ensuring consistent branding across applications.",
+          "Created and maintained API documentation, improving integration efficiency by 20% and reducing support queries by 15%."
+        ]
+      },
+      {
+        "title": "IT Support Specialist",
+        "company": "MR International",
+        "location": "Nigeria",
+        "time_worked": "Aug 2019 – Dec 2021",
+        "responsibilities": [
+          "Conducted monthly system performance audits, reducing downtime by 30% and improving reliability by 20%.",
+          "Developed comprehensive network documentation, reducing onboarding time for new team members by 20%.",
+          "Created security training materials, improving threat detection by 15% and response times to attacks."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Post Graduate Diploma",
+        "field_of_study": "Web Development",
+        "institution": "University of Winnipeg",
+        "location": "Canada",
+        "time_attended": "Aug 2022 – Sep 2023"
+      },
+      {
+        "degree": "Post Graduate Diploma",
+        "field_of_study": "Cybersecurity",
+        "institution": "Mohawk College",
+        "location": "Canada",
+        "time_attended": "Jan 2022 – Aug 2022"
+      },
+      {
+        "degree": "Bachelor of Engineering",
+        "field_of_study": "Engineering",
+        "institution": "Covenant University",
+        "location": "Nigeria",
+        "time_attended": "Aug 2014 – Jul 2019"
+      }
+    ]
+  }
+}

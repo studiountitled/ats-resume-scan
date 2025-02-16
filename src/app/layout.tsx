@@ -72,14 +72,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        {/* <GoogleAdsense pId={googleAdId} /> */}
-        <script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${googleAdId}`}
-          crossOrigin="anonymous"
-        />
-      </Head>
       <body className={`${instrumentSans.variable}`}>
         <nav>
           <span className="logo">

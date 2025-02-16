@@ -5,8 +5,6 @@ import "./globals.css";
 import Link from "next/link";
 import Providers from "./Providers";
 import { Toaster } from "react-hot-toast";
-import Head from "next/head";
-// import GoogleAdsense from "./components/GoogleAdsense";
 
 const instrumentSans = Instrument_Sans({
   variable: "--font-instrument-sans",

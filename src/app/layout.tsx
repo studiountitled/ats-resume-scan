@@ -26,7 +26,6 @@ const getEnvVar = (key: string, defaultValue?: string): string => {
 };
 
 const googleID = getEnvVar("GA_ID");
-const googleAdId = getEnvVar("GOOGLE_AD_ID");
 
 // app/layout.tsx
 export const metadata: Metadata = {

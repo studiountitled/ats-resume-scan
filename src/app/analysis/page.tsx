@@ -12,7 +12,7 @@ const AnalysisPage = () => {
   const { data, isLoading } = useAnalysisContext();
 
   useEffect(() => {
-    if (!data && !isLoading) redirect("/");
+    if (data === null && !isLoading) redirect("/");
   }, [data, isLoading]);
 
   if (!data) return <Loading showText={false} />;
